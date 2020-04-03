@@ -1,9 +1,35 @@
 // Google Fonts
 @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,700,300|Roboto:400,700,300|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300);
+@import url(//cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css);
+
+// @font-face {
+//     font-family: "Computer Modern";
+//     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+// }
+// @font-face {
+//     font-family: "Computer Modern";
+//     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+//     font-weight: bold;
+// }
+// @font-face {
+//     font-family: "Computer Modern";
+//     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+//     font-style: italic, oblique;
+// }
+// @font-face {
+//     font-family: "Computer Modern";
+//     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+//     font-weight: bold;
+//     font-style: italic, oblique;
+// }
 
 // Typography
-$base-font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; // $helvetica;
-$heading-font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif; // $base-font-family;
+$base-font-family: "Computer Modern Bright", sans-serif; 
+//, "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; // $helvetica;
+$heading-font-family: "Computer Modern Concrete", "Roboto Slab", "Helvetica Neue", "Helvetica", "Arial", sans-serif; 
+
+$text-font-family: "Computer Modern Serif", sans-serif; 
+// $base-font-family;
 
 // Font Sizes
 $base-font-size: $em-base; // 16px
@@ -12,8 +38,8 @@ $base-font-size: $em-base; // 16px
 $modular-scale-ratio: $minor-third;
 
 // Line height
-$base-line-height: 1.8;
-$heading-line-height: 1.8;
+$base-line-height: 1.5;
+$heading-line-height: 1.5;
 
 // Other Sizes
 $base-border-radius: 3px;
@@ -38,13 +64,17 @@ $gray: #7f8c8d;				// Asbestos
 $bc-red: #bc0000;
 
 // Font Colors
-$base-background-color: #fff;
+// $base-background-color: #fff;
+// $base-background-color: $light-gray;
+$base-background-color: $medium-gray;
+$page-background-color: #eee;
 $base-font-color: $dark-gray;
+// $base-font-color: $light-gray;
 $action-color: $blue;
 $highlight-color: tint($action-color, 33%);
 
 // Border
-$base-border-color: $light-gray;
+$base-border-color: $medium-gray;
 $base-border: 1px solid $base-border-color;
 
 // Forms
