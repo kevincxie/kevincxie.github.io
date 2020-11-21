@@ -3,86 +3,109 @@ layout: default
 pagination: 
   enabled: true
 ---
-<div class="home">
-
-<div class="site-header-container {% if site.cover %}has-cover{% endif %}" {% if site.cover %}style="background-image: url({{ site.cover | prepend: site.baseurl }});"{% endif %}>
-  <div class="scrim {% if site.cover %}has-cover{% endif %}">
-    <header class="site-header">
-      <h1 class="title">{{ site.title }}</h1>
-      {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
-    </header>
-  </div>
-</div>
+<!-- <div class="home"> -->
 
 <div class="wrapper">
-<ul class="post-list">
-  {% for post in paginator.posts %}
-  <li>
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-    </section>
-    <section class="post-meta">
-      <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
-      <div class="post-categories">
-      {% if post.categories.size > 0 %}in {% for cat in post.categories %}
-        {% if site.jekyll-archives %}
-        <a href="{{ site.baseurl }}/category/{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-        {% else %}
-        <a href="{{ site.baseurl }}/posts/#{{ cat }}">{{ cat | capitalize }}</a>{% if forloop.last == false %}, {% endif %}
-        {% endif %}
-      {% endfor %}{% endif %}
-      </div>
-    </section>
-  </li>
-  {% if forloop.last == false %}
-  <hr>
-  {% endif %}
-  {% endfor %}
-</ul>
+<div class="page">
 
-<nav class="pagination" role="navigation">
-	<p>
-    {% if paginator.previous_page %}
-			{% if paginator.page == 2 %}
-			<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.previous_page_path }}">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-square fa-stack-2x"></i>
-          <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-        </span>
-      </a>
-			{% else %}
-			<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.next_page_path }}">
-				<span class="fa-stack fa-lg">
-					<i class="fa fa-square fa-stack-2x"></i>
-					<i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-				</span>
-			</a>
-			{% endif %}
-		{% else %}
-		<span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-left fa-stack-1x fa-inverse"></i>
-    </span>
-		{% endif %}
-		<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-		{% if paginator.next_page %}
-		<a class="newer-posts" href="{{ site.baseurl }}{{ paginator.next_page_path }}">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-square fa-stack-2x"></i>
-        <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-		{% else %}
-		<span class="fa-stack fa-lg">
-      <i class="fa fa-square fa-stack-2x"></i>
-      <i class="fa fa-angle-double-right fa-stack-1x fa-inverse"></i>
-    </span>
-		{% endif %}
-	</p>
-</nav>
+  <header class="post-header">
+    <h1 class="post-title">Kevin Xie</h1>
+  </header>
+
+
+  <article class="post-content">
+    <!-- {{ content }} -->
+
+    I am a Masters student in the Department of Computer Science at the University of Toronto and the Vector Institute, gratefully co-supervised by Florian Shkurti and Sanja Fidler.
+    I am also a Research Scientist Intern at Nvidia.
+    Before that I did my undergrad in Engineering Physics at UBC, where I had the great pleasure of working with Michiel van de Panne and his group.
+    <br>
+    My research interests surround learning-based methods for simulation and control and include generative modelling, model-based reinforcement learning and character control.
+    <br>
+    Email: <img src='assets/email.png' style="display:inline;height:1em;width:150px">
+  </article>
+  <!-- {% include page_divider.html %} -->
+
+  {% include page_divider.html %}
+  <h2> Publications</h2>
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+        <td style="padding:6px;width:33%;vertical-align:middle">
+          <!-- <div style = "height:2.5em"> -->
+            <!-- <img src='assets/PLAiD_teaser.png' class="heightSet"> -->
+            <img src='assets/hclr.png'>
+            <!-- </div> -->
+        </td>
+        <td style="padding:6px;width:66%;vertical-align:middle">
+          <strong>Continual Model-Based Reinforcement Learning with Hypernetworks</strong>
+          <br>
+          <a>Philip Huang</a>,
+          <strong>Kevin Xie</strong>,
+          <a>Homanga Bharadhwaj</a>,
+          <a>Florian Shkurti</a>
+          <!-- <a href="https://arxiv.org/abs/2010.08888"> -->
+          <!-- </a> -->
+          <br>
+            Task-conditioned hypernetworks continually adapt to change in environment dynamics with a limited replay buffer.
+          <br>
+          <em>Deep RL Workshop (NeurIPS)</em>, 2020
+          <!-- <a href="https://arxiv.org/abs/2010.08888">arXiv</a> -->
+          <a href="https://arxiv.org/pdf/2009.11997.pdf">paper</a>
+          <p></p>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding:6px;width:33%;vertical-align:middle">
+          <!-- <div style = "height:2.5em"> -->
+            <!-- <img src='assets/PLAiD_teaser.png' class="heightSet"> -->
+            <img src='assets/gradcem.png'>
+            <!-- </div> -->
+        </td>
+        <td style="padding:6px;width:66%;vertical-align:middle">
+          <strong>Model-Predictive Planning via Cross-Entropy and Gradient-Based Optimization</strong>
+          <br>
+          <a>Homanga Bharadhwaj*</a>,
+          <strong>Kevin Xie*</strong>,
+          <a>Florian Shkurti</a>,
+          <!-- <a href="https://arxiv.org/abs/2010.08888"> -->
+          <!-- </a> -->
+          <br>
+            Updating the top action sequences identified by CEM through a few gradient steps helps improve sample efficiency and performance of planning in Model-based RL.
+          <br>
+          <em>L4DC</em>, 2020
+          <a href="http://proceedings.mlr.press/v120/bharadhwaj20a/bharadhwaj20a.pdf">paper</a>
+          <p></p>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="padding:6px;width:33%;vertical-align:middle">
+          <!-- <div style = "height:2.5em"> -->
+            <!-- <img src='assets/PLAiD_teaser.png' class="heightSet"> -->
+            <img src='assets/PLAiD_teaser.png'>
+            <!-- </div> -->
+        </td>
+        <td style="padding:6px;width:66%;vertical-align:middle">
+          <strong>Progressive Reinforcement Learning with Distillation for Multi-Skilled Motion Control</strong>
+          <br>
+          <a>Glen Berseth*</a>,
+          <strong>Kevin Xie*</strong>,
+          <a>Paul Cernek</a>,
+          <a>Michiel van de Panne</a>
+          <!-- <a href="https://arxiv.org/abs/2010.08888"> -->
+          <!-- </a> -->
+          <br>
+            Progressive learning and integration via distillation (PLAID) allows a single policy to quickly acquire new locomotion skills.
+          <br>
+          <em>ICLR</em>, 2018 
+          <a href="https://arxiv.org/pdf/1802.04765.pdf">arXiv</a>
+          <p></p>
+        </td>
+    </tr>
+  </tbody></table>
 
 </div>
 </div>
+
+<!-- </div> -->
