@@ -9,9 +9,9 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Nescient Musings
+title: Kevin Xie
 subtitle: "\"Real knowledge is to know the extent of one's ignorance.\""
-email: kevin.cheng.xie@gmail.com
+#email: kevin.cheng.xie@gmail.com
 name: Kevin Xie 
 description: >
   # A simple yet classy theme for your Jekyll website or blog.
