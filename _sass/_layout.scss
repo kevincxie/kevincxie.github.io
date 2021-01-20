@@ -19,6 +19,14 @@ $desktop: $b1;
   width: auto;
 }
 
+
+.paper-pic {
+    max-height:120px;
+    max-width:250px;
+    height:auto;
+    width:auto;
+}
+
 /*
 *	Globals
 */
@@ -282,7 +290,7 @@ pre code.hljs {
 	img {
 		display: block;
 		margin: auto;
-		width: 90%;
+		// width: 90%;
 	}
 	/*
 	*	Posts
