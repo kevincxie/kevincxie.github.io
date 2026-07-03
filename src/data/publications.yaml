@@ -32,6 +32,7 @@ publications:
     venue: "arXiv preprint"
     year: 2026
     selected: true
+    video: /assets/pubs/omnidreams.mp4
     links:
       paper: https://arxiv.org/abs/2606.03159
     tldr: "A causal-diffusion generative world model trained on 21k hours of driving data that renders action-conditioned multi-view AV sensor video at up to 105 FPS per camera for closed-loop policy evaluation."
@@ -52,6 +53,7 @@ publications:
     venue: "arXiv preprint"
     year: 2026
     selected: false
+    teaser: /assets/pubs/vlm-autodrive.png
     links:
       paper: https://arxiv.org/abs/2603.18178
     tldr: "A modular post-training framework (captions, VQA pairs, chain-of-thought supervision) that adapts pretrained VLMs to detect rare safety-critical dashcam events."
@@ -77,6 +79,7 @@ publications:
     venue: "arXiv preprint"
     year: 2025
     selected: false
+    video: /assets/pubs/vipe.mp4
     links:
       paper: https://arxiv.org/abs/2508.10934
       website: https://research.nvidia.com/labs/toronto-ai/vipe/
@@ -111,9 +114,10 @@ publications:
     venue: "arXiv preprint"
     year: 2025
     selected: false
+    video: /assets/pubs/cosmos-transfer1.mp4
     links:
       paper: https://arxiv.org/abs/2503.14492
-      website: https://research.nvidia.com/labs/dir/cosmos-transfer1/
+      website: https://research.nvidia.com/labs/cosmos-lab/cosmos-transfer1/
       code: https://github.com/nvidia-cosmos/cosmos-transfer1
     tldr: "An open-sourced conditional world-generation model producing controllable world simulations from adaptively-weighted multimodal spatial inputs, targeting Sim2Real for robotics and AV."
 
@@ -134,6 +138,7 @@ publications:
     venue: "NeurIPS"
     year: 2024
     selected: false
+    video: /assets/pubs/l4gm.mp4
     links:
       paper: https://arxiv.org/abs/2406.10324
       website: https://research.nvidia.com/labs/toronto-ai/l4gm/
@@ -154,6 +159,7 @@ publications:
     venue: "ECCV"
     year: 2024
     selected: true
+    video: /assets/pubs/latte3d.mp4
     links:
       paper: https://arxiv.org/abs/2403.15385
       website: https://research.nvidia.com/labs/toronto-ai/LATTE3D/
@@ -172,6 +178,7 @@ publications:
     venue: "arXiv preprint"
     year: 2023
     selected: false
+    teaser: /assets/pubs/adversarial.png
     links:
       paper: https://arxiv.org/abs/2309.15770
     tldr: "Discovers adversarial driving scenarios by optimizing object placement and textures inside a neural rendering of the deployment scene, with attacks transferring to a real RC-car track."
@@ -190,6 +197,7 @@ publications:
     venue: "ICCV"
     year: 2023
     selected: false
+    video: /assets/pubs/human-dynamics.mp4
     links:
       paper: https://openaccess.thecvf.com/content/ICCV2023/html/Wang_Learning_Human_Dynamics_in_Autonomous_Driving_Scenarios_ICCV_2023_paper.html
     tldr: "Learns physically plausible human dynamics directly from real-world driving footage, enabling simulated pedestrians that behave like real ones."
@@ -210,6 +218,7 @@ publications:
     venue: "ICCV"
     year: 2023
     selected: true
+    video: /assets/pubs/att3d.mp4
     links:
       paper: https://arxiv.org/abs/2306.07349
       website: https://research.nvidia.com/labs/toronto-ai/ATT3D/
@@ -244,6 +253,7 @@ publications:
     venue: "3DV"
     year: 2021
     selected: false
+    video: /assets/pubs/kama.mp4
     links:
       paper: https://arxiv.org/abs/2104.13502
     tldr: "An analytical solution that articulates the SMPL body model directly from 26 regressed 3D keypoints, achieving image-aligned mesh recovery without paired mesh annotations."
@@ -268,6 +278,7 @@ publications:
     venue: "ICLR"
     year: 2021
     selected: false
+    teaser: /assets/pubs/gradsim.gif
     links:
       paper: https://arxiv.org/abs/2104.02646
       website: https://gradsim.github.io

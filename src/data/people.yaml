@@ -1,6 +1,80 @@
 # Co-author name → personal/academic homepage.
 # Author names in publications.yaml are looked up here (after stripping the
 # equal-contribution *); matches render as links. Absent/null = plain text.
-# Populated 2026-07-02; sourced from project-page author links and search.
+# Compiled 2026-07-02 from project-page author links + verified search.
+# No credible page found: Yufan Huang, Hao Wang, Ruiting Chen, Paul Cernek.
 
-people: {}
+people:
+  "Xinglong Sun": https://www.xinglongsun.com/
+  "Jenny Schmalfuss": https://www.vis.uni-stuttgart.de/en/institute/team/Schmalfuss/
+  "Despoina Paschalidou": https://paschalidoud.github.io/
+  "Xiuming Zhang": https://xiuming.info/
+  "Sanja Fidler": https://www.cs.utoronto.ca/~fidler/
+  "Kashyap Chitta": https://kashyap7x.github.io/
+  "Jose M. Alvarez": https://alvarezlopezjosem.github.io/
+  "Mohammad Qazim Bhat": https://scholar.google.com/citations?user=SBoElKMAAAAJ
+  "Niket Agarwal": https://developer.nvidia.com/blog/author/niketa/
+  "Michael Woods": https://developer.nvidia.com/blog/author/mwoods/
+  "John Kenyon": https://developer.nvidia.com/blog/author/jkenyon/
+  "Tsung-Yi Lin": https://tsungyilin.info/
+  "Xiaodong Yang": https://xiaodongyang.org/
+  "Ming-Yu Liu": https://mingyuliu.net/
+  "Jiahui Huang": https://huangjh-pub.github.io/
+  "Qunjie Zhou": https://research.nvidia.com/labs/dvl/author/qunjie-zhou/
+  "Hesam Rabeti": https://www.linkedin.com/in/hesam-rabeti-a994a61b/
+  "Aleksandr Korovko": https://www.linkedin.com/in/alexander-korovko-a60a55171/
+  "Huan Ling": https://www.cs.toronto.edu/~linghuan/
+  "Xuanchi Ren": https://xuanchiren.com/
+  "Tianchang Shen": https://www.cs.toronto.edu/~shenti11/
+  "Jun Gao": https://www.cs.toronto.edu/~jungao/
+  "Dmitry Slepichev": https://www.linkedin.com/in/slepichev/
+  "Chen-Hsuan Lin": https://chenhsuanlin.bitbucket.io/
+  "Jiawei Ren": https://jiawei-ren.github.io/
+  "Joydeep Biswas": https://www.joydeepb.com/
+  "Laura Leal-Taixe": https://dvl.in.tum.de/team/lealtaixe/
+  "Amirmojtaba Sabour": https://research.nvidia.com/labs/genair/author/amirmojtaba-sabour/
+  "Greg Klar": https://research.nvidia.com/labs/prl/author/gergely-klar/
+  "Umar Iqbal": https://www.umariqbal.info/
+  "Xiaohui Zeng": https://www.cs.utoronto.ca/~xiaohui/
+  "Ashkan Mirzaei": https://tisl.cs.toronto.edu/author/ashkan-mirzaei/
+  "Hanxue Liang": https://scholar.google.com/citations?user=XcxDA14AAAAJ&hl=en
+  "Karsten Kreis": https://karstenkreis.github.io/
+  "Ziwei Liu": https://liuziwei7.github.io/
+  "Antonio Torralba": https://groups.csail.mit.edu/vision/torralbalab/
+  "Seung Wook Kim": https://seung-kim.github.io/seungkim/
+  "Jonathan Lorraine": https://www.jonlorraine.com/
+  "Tianshi Cao": https://scholar.google.ca/citations?user=CZ9wBBoAAAAJ&hl=en
+  "James Lucas": https://www.cs.toronto.edu/~jlucas/
+  "Yasasa Abeysirigoonawardena": https://www.yasasa.me
+  "Chuhan Chen": https://sally-chen.github.io/
+  "Salar Hosseini": https://salarios77.github.io/
+  "Ruiqi Wang": https://scholar.google.com/citations?user=Ln76VgIAAAAJ
+  "Florian Shkurti": http://www.cs.toronto.edu/florian/
+  "Jingbo Wang": https://wangjingbo1219.github.io/
+  "Ye Yuan": https://ye-yuan.com/
+  "Zhengyi Luo": https://www.zhengyiluo.com/
+  "Dahua Lin": https://www.ie.cuhk.edu.hk/faculty/lin-dahua/
+  "Sameh Khamis": https://www.samehkhamis.com/
+  "Towaki Takikawa": https://tovacinni.github.io/
+  "Nicholas Sharp": https://nmwsharp.com/
+  "Tingwu Wang": https://tingwuwang.github.io/
+  "Yunrong Guo": https://research.nvidia.com/labs/dair/author/yunrong-guo/
+  "Jan Kautz": https://jankautz.com/
+  "Pavlo Molchanov": https://pmolchanov.com/
+  "Krishna Murthy Jatavallabhula": https://krrish94.github.io
+  "Miles Macklin": http://blog.mmacklin.com/
+  "Florian Golemo": https://fgolemo.github.io/
+  "Vikram Voleti": https://voletiv.github.io/
+  "Linda Petrini": https://lindapetrini.github.io/
+  "Martin Weiss": http://www.martin-weiss.me/research
+  "Breandan Considine": http://breandan.net/
+  "Jerome Parent-Levesque": https://jeromepl.com/
+  "Kenny Erleben": https://iphys.wordpress.com/
+  "Liam Paull": http://liampaull.ca
+  "Derek Nowrouzezahrai": https://www.cim.mcgill.ca/derek/
+  "Homanga Bharadhwaj": https://homangab.github.io/
+  "Danijar Hafner": https://danijar.com/
+  "Animesh Garg": https://animesh.garg.tech/
+  "Yizhou Huang": https://philip-huang.com/
+  "Glen Berseth": https://neo-x.github.io/
+  "Michiel van de Panne": https://www.cs.ubc.ca/~van/
