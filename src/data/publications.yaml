@@ -5,6 +5,18 @@
 # Metadata verified against arXiv/project pages 2026-07-02.
 
 publications:
+  - id: cosmos3
+    title: "Cosmos 3: Omnimodal World Models for Physical AI"
+    # NVIDIA team paper: 296 authors, alphabetical by last name
+    authors:
+      - "NVIDIA Cosmos team (296 authors, incl. Kevin Xie)"
+    venue: "arXiv preprint"
+    year: 2026
+    selected: false
+    links:
+      paper: https://arxiv.org/abs/2606.02800
+    tldr: "A family of omnimodal world models that jointly process and generate language, image, video, audio, and action within a unified mixture-of-transformers, subsuming VLMs, video generators, world simulators, and world-action models into one framework."
+
   - id: drivejudge
     title: "DriveJudge: Rethinking Autonomous Driving Evaluation with Vision-Language Models"
     authors:
