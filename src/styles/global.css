@@ -105,11 +105,6 @@ a:focus-visible {
   flex-shrink: 0;
 }
 
-.hero .role {
-  margin: 0.35rem 0 0;
-  color: var(--muted);
-}
-
 .links-row {
   margin: 0.7rem 0 0;
   padding: 0;
