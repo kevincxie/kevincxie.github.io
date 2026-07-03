@@ -35,6 +35,7 @@ publications:
     video: /assets/pubs/omnidreams.mp4
     links:
       paper: https://arxiv.org/abs/2606.03159
+      website: https://research.nvidia.com/labs/sil/projects/omnidreams-blog/
     tldr: "A causal-diffusion generative world model trained on 21k hours of driving data that renders action-conditioned multi-view AV sensor video at up to 105 FPS per camera for closed-loop policy evaluation."
 
   - id: vlm-autodrive
@@ -175,10 +176,11 @@ publications:
       - "Ruiting Chen"
       - "Ruiqi Wang"
       - "Florian Shkurti"
-    venue: "arXiv preprint"
+    # venue per first author Yasasa's bibtex: CoRL 2023 (+ RSS Safe Autonomy workshop)
+    venue: "CoRL"
     year: 2023
     selected: false
-    teaser: /assets/pubs/adversarial.png
+    teaser: /assets/pubs/adversarial-yasasa.png
     links:
       paper: https://arxiv.org/abs/2309.15770
     tldr: "Discovers adversarial driving scenarios by optimizing object placement and textures inside a neural rendering of the deployment scene, with attacks transferring to a real RC-car track."
