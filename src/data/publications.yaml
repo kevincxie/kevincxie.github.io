@@ -1,0 +1,165 @@
+# Publication data — newest first. Adding a paper = adding one entry here.
+# selected: true puts the paper in the "Selected publications" section.
+# teaser: path under /public. Omit for a halftone placeholder block.
+# NOTE: 2023–2026 entries are stubs pending metadata verification.
+
+publications:
+  - id: drivejudge
+    title: "DriveJudge: Rethinking Autonomous Driving Evaluation with Vision-Language Models"
+    authors: []
+    venue: "arXiv preprint"
+    year: 2026
+    selected: true
+    links: {}
+    tldr: ""
+
+  - id: omnidreams
+    title: "NVIDIA OmniDreams: Real-Time Generative World Model for Closed-Loop Autonomous Vehicle Simulation"
+    authors: []
+    venue: "arXiv preprint"
+    year: 2026
+    selected: true
+    links: {}
+    tldr: ""
+
+  - id: vlm-autodrive
+    title: "VLM-AutoDrive: Post-Training Vision-Language Models for Safety-Critical Autonomous Driving Events"
+    authors: []
+    venue: "arXiv preprint"
+    year: 2026
+    selected: true
+    links: {}
+    tldr: ""
+
+  - id: vipe
+    title: "ViPE: Video Pose Engine for 3D Geometric Perception"
+    authors: []
+    venue: "arXiv preprint"
+    year: 2025
+    selected: true
+    links: {}
+    tldr: ""
+
+  - id: cosmos-transfer1
+    title: "Cosmos-Transfer1: Conditional World Generation with Adaptive Multimodal Control"
+    authors: []
+    venue: "arXiv preprint"
+    year: 2025
+    selected: true
+    links: {}
+    tldr: ""
+
+  - id: videopanda
+    title: "VideoPanda: Video Panoramic Diffusion with Multi-View Attention"
+    authors: []
+    venue: "arXiv preprint"
+    year: 2025
+    selected: false
+    links: {}
+    tldr: ""
+
+  - id: l4gm
+    title: "L4GM: Large 4D Gaussian Reconstruction Model"
+    authors: []
+    venue: "NeurIPS"
+    year: 2024
+    selected: true
+    links: {}
+    tldr: ""
+
+  - id: latte3d
+    title: "Latte3D: Large-scale Amortized Text-To-Enhanced3D Synthesis"
+    authors: []
+    venue: "arXiv preprint"
+    year: 2024
+    selected: false
+    links: {}
+    tldr: ""
+
+  - id: att3d
+    title: "ATT3D: Amortized Text-to-3D Object Synthesis"
+    authors: []
+    venue: "ICCV"
+    year: 2023
+    selected: true
+    links: {}
+    tldr: ""
+
+  - id: physics-pose
+    title: "Physics-based Human Motion Estimation and Synthesis from Videos"
+    authors:
+      - "Kevin Xie"
+      - "Tingwu Wang"
+      - "Umar Iqbal"
+      - "Yunrong Guo"
+      - "Sanja Fidler"
+      - "Florian Shkurti"
+    venue: "ICCV"
+    year: 2021
+    selected: true
+    teaser: /assets/pubs/phys_pe.png
+    links:
+      paper: https://arxiv.org/abs/2109.09913
+      website: https://nv-tlabs.github.io/physics-pose-estimation-project-page/
+    tldr: "Video pose estimation quality can be improved greatly by enforcing physics consistency."
+
+  - id: latent-skill-planning
+    title: "Skill Transfer via Partially Amortized Hierarchical Planning"
+    authors:
+      - "Kevin Xie*"
+      - "Homanga Bharadhwaj*"
+      - "Danijar Hafner"
+      - "Animesh Garg"
+      - "Florian Shkurti"
+    venue: "ICLR"
+    year: 2021
+    selected: false
+    teaser: /assets/pubs/lsp.png
+    links:
+      paper: https://arxiv.org/abs/2011.13897
+      website: https://sites.google.com/view/latent-skill-planning/home
+    tldr: "Learning temporally extended skills for planning with a world model improves MBRL training and transfer."
+
+  - id: hypercrl
+    title: "Continual Model-Based Reinforcement Learning with Hypernetworks"
+    authors:
+      - "Philip Huang"
+      - "Kevin Xie"
+      - "Homanga Bharadhwaj"
+      - "Florian Shkurti"
+    venue: "Deep RL Workshop (NeurIPS)"
+    year: 2020
+    selected: false
+    teaser: /assets/pubs/hclr.png
+    links:
+      paper: https://arxiv.org/abs/2009.11997
+    tldr: "Task-conditioned hypernetworks continually adapt to changing environment dynamics with a limited replay buffer."
+
+  - id: grad-cem
+    title: "Model-Predictive Planning via Cross-Entropy and Gradient-Based Optimization"
+    authors:
+      - "Homanga Bharadhwaj*"
+      - "Kevin Xie*"
+      - "Florian Shkurti"
+    venue: "L4DC"
+    year: 2020
+    selected: false
+    teaser: /assets/pubs/gradcem.png
+    links:
+      paper: http://proceedings.mlr.press/v120/bharadhwaj20a/bharadhwaj20a.pdf
+    tldr: "Refining the top CEM action sequences with a few gradient steps improves sample efficiency and planning performance in model-based RL."
+
+  - id: plaid
+    title: "Progressive Reinforcement Learning with Distillation for Multi-Skilled Motion Control"
+    authors:
+      - "Glen Berseth*"
+      - "Kevin Xie*"
+      - "Paul Cernek"
+      - "Michiel van de Panne"
+    venue: "ICLR"
+    year: 2018
+    selected: false
+    teaser: /assets/pubs/PLAiD_teaser.png
+    links:
+      paper: https://arxiv.org/abs/1802.04765
+    tldr: "Progressive learning and integration via distillation (PLAID) lets a single policy quickly acquire new locomotion skills."

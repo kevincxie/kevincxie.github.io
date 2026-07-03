@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+import PubRow from '../components/PubRow.astro';
+import data from '../data/publications.yaml';
+
+const pubs = data.publications;
+const selected = pubs.filter((p) => p.selected);
+const rest = pubs.filter((p) => !p.selected);
+
+const description =
+  'Kevin Xie is a research scientist at NVIDIA working on generative world models for autonomous vehicle simulation.';
+---
+
+<Base title="Kevin Xie" description={description}>
+  <section class="hero">
+    <img src="/assets/kevin-profile.jpeg" alt="Halftone portrait of Kevin Xie" width="332" height="333" />
+    <div>
+      <h1>Kevin Xie</h1>
+      <p class="role">Research Scientist, NVIDIA — video world models for autonomous vehicles</p>
+      <ul class="links-row">
+        <li><a href="https://scholar.google.com/citations?user=04dL0akAAAAJ">Scholar</a></li>
+        <li><a href="https://github.com/kevincxie">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/kevin-xie-77286796/">LinkedIn</a></li>
+        <li><a href="https://x.com/kevincxie">X</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="halftone-rule" />
+
+  <section class="about" aria-label="About">
+    <p>
+      I am a research scientist at NVIDIA, where I work on generative world models for
+      autonomous vehicle simulation. My research interests span world models, video
+      generation, 3D/4D generative modeling, simulation, and reinforcement learning.
+    </p>
+    <p>
+      I did my PhD in Computer Science at the University of Toronto and the Vector
+      Institute, co-supervised by Florian Shkurti and Sanja Fidler. Before that, I
+      studied Engineering Physics at UBC, where I worked with Michiel van de Panne.
+    </p>
+  </section>
+
+  <h2>Selected publications</h2>
+  <ul class="pub-list">
+    {selected.map((pub) => <PubRow pub={pub} />)}
+  </ul>
+
+  <h2>More publications</h2>
+  <ul class="pub-list">
+    {rest.map((pub) => <PubRow pub={pub} />)}
+  </ul>
+
+  <p>
+    A full, up-to-date list is on
+    <a href="https://scholar.google.com/citations?user=04dL0akAAAAJ">Google Scholar</a>.
+  </p>
+</Base>

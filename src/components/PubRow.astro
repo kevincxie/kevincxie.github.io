@@ -1,0 +1,68 @@
+---
+interface Publication {
+  id: string;
+  title: string;
+  authors: string[];
+  venue: string;
+  year: number;
+  selected: boolean;
+  teaser?: string;
+  video?: string;
+  links: Record<string, string>;
+  tldr: string;
+}
+
+interface Props {
+  pub: Publication;
+}
+
+const { pub } = Astro.props;
+
+function isKevin(name: string) {
+  return name.replace('*', '') === 'Kevin Xie';
+}
+---
+
+<li class="pub" id={pub.id}>
+  <div class="teaser">
+    {
+      pub.video ? (
+        <video src={pub.video} autoplay loop muted playsinline aria-label={`Teaser video for ${pub.title}`} />
+      ) : pub.teaser ? (
+        <img src={pub.teaser} alt={`Teaser figure for ${pub.title}`} loading="lazy" />
+      ) : (
+        <div class="placeholder" aria-hidden="true" />
+      )
+    }
+  </div>
+  <div>
+    <h3>{pub.title}</h3>
+    {
+      pub.authors.length > 0 && (
+        <p class="authors">
+          {pub.authors.map((a, i) => (
+            <>
+              {isKevin(a) ? <b>{a}</b> : a}
+              {i < pub.authors.length - 1 && ', '}
+            </>
+          ))}
+        </p>
+      )
+    }
+    <p class="venue">
+      <em>{pub.venue}</em>, {pub.year}
+    </p>
+    {pub.tldr && <p class="tldr">{pub.tldr}</p>}
+    {
+      Object.keys(pub.links).length > 0 && (
+        <ul class="pub-links">
+          {Object.entries(pub.links).map(([label, url]) => (
+            <li>
+              <a href={url}>{label}</a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </div>
+</li>
