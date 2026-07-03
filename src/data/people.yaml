@@ -1,0 +1,6 @@
+# Co-author name → personal/academic homepage.
+# Author names in publications.yaml are looked up here (after stripping the
+# equal-contribution *); matches render as links. Absent/null = plain text.
+# Populated 2026-07-02; sourced from project-page author links and search.
+
+people: {}

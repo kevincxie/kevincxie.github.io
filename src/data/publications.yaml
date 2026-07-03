@@ -19,6 +19,7 @@ publications:
     venue: "arXiv preprint"
     year: 2026
     selected: true
+    teaser: /assets/pubs/drivejudge.png
     links:
       paper: https://arxiv.org/abs/2606.17362
     tldr: "A context-aware AV evaluation framework combining rule-based metrics with VLM reasoning about when rules should apply, avoiding over-penalizing reasonable long-tail driving behavior."
@@ -50,7 +51,7 @@ publications:
       - "Kevin Xie"
     venue: "arXiv preprint"
     year: 2026
-    selected: true
+    selected: false
     links:
       paper: https://arxiv.org/abs/2603.18178
     tldr: "A modular post-training framework (captions, VQA pairs, chain-of-thought supervision) that adapts pretrained VLMs to detect rare safety-critical dashcam events."
@@ -96,6 +97,7 @@ publications:
     venue: "arXiv preprint"
     year: 2025
     selected: true
+    video: /assets/pubs/videopanda.mp4
     links:
       paper: https://arxiv.org/abs/2504.11389
       website: https://research.nvidia.com/labs/toronto-ai/VideoPanda/
@@ -131,7 +133,7 @@ publications:
       - "Huan Ling"
     venue: "NeurIPS"
     year: 2024
-    selected: true
+    selected: false
     links:
       paper: https://arxiv.org/abs/2406.10324
       website: https://research.nvidia.com/labs/toronto-ai/l4gm/
@@ -283,7 +285,7 @@ publications:
       - "Florian Shkurti"
     venue: "ICLR"
     year: 2021
-    selected: false
+    selected: true
     teaser: /assets/pubs/lsp.png
     links:
       paper: https://arxiv.org/abs/2011.13897

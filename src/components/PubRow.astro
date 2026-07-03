@@ -1,4 +1,6 @@
 ---
+import peopleData from '../data/people.yaml';
+
 interface Publication {
   id: string;
   title: string;
@@ -17,10 +19,15 @@ interface Props {
 }
 
 const { pub } = Astro.props;
+const people: Record<string, string | null> = peopleData.people;
 
 function isKevin(name: string) {
   const n = name.replace('*', '');
   return n === 'Kevin Xie' || n === 'Kevin (Cheng) Xie';
+}
+
+function homepage(name: string): string | null {
+  return people[name.replace('*', '')] ?? null;
 }
 ---
 
@@ -43,7 +50,13 @@ function isKevin(name: string) {
         <p class="authors">
           {pub.authors.map((a, i) => (
             <>
-              {isKevin(a) ? <b>{a}</b> : a}
+              {isKevin(a) ? (
+                <b>{a}</b>
+              ) : homepage(a) ? (
+                <a href={homepage(a)}>{a}</a>
+              ) : (
+                a
+              )}
               {i < pub.authors.length - 1 && ', '}
             </>
           ))}
