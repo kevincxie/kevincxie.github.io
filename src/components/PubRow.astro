@@ -19,7 +19,8 @@ interface Props {
 const { pub } = Astro.props;
 
 function isKevin(name: string) {
-  return name.replace('*', '') === 'Kevin Xie';
+  const n = name.replace('*', '');
+  return n === 'Kevin Xie' || n === 'Kevin (Cheng) Xie';
 }
 ---
 
